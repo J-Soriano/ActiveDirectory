@@ -1,9 +1,10 @@
 # Active Directory
 
 ## Introduction
-Let's embark on a modest exploration into the intricacies of Windows Server 2022 and Windows 10 Pro in our ongoing project. This endeavour humbly tackles server challenges, addressing nuances like power options and network settings. We navigate the elevation of Windows Server through roles, the creation of admin accounts, and the configuration of remote access. Witness the simplicity of account automation, establishing DHCP scopes, and seamlessly integrating Windows clients into the domain. Join us on this unassuming journey as we craft a secure and interconnected Windows environment, demonstrating reachability through ping tests and laying the groundwork for a sturdy IT infrastructure.
+Join me as we explore Windows Server 2022 and Windows 10 Pro in our project. We'll tackle server challenges, set up admin accounts, configure remote access, and more. Experience the simplicity of account automation, DHCP scopes, and integrating Windows clients into the domain. Together, let's build a secure Windows environment and lay the groundwork for a sturdy IT infrastructure.
 
-![domain-joined](https://github.com/rasheedjimoh/ActiveDirectory/assets/157264080/3e488293-b8bd-4b05-bbf8-8533196d9f91)
+![domain-joined](![Windows 10 x64-2024-06-07-18-19-21](https://github.com/J-Soriano/ActiveDirectory/assets/78861887/8b8d09c9-b267-4e09-a856-fe821ebe98c6)
+)
 
 
 
