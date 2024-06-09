@@ -3,23 +3,20 @@
 ## Introduction
 Join me as we explore Windows Server 2022 and Windows 10 Pro in our project. We'll tackle server challenges, set up admin accounts, configure remote access, and more. Experience the simplicity of account automation, DHCP scopes, and integrating Windows clients into the domain. Together, let's build a secure Windows environment and lay the groundwork for a sturdy IT infrastructure.
 
-![domain-joined](![Windows 10 x64-2024-06-07-18-19-21](https://github.com/J-Soriano/ActiveDirectory/assets/78861887/8b8d09c9-b267-4e09-a856-fe821ebe98c6)
-)
-
 
 
 ## Technologies/Stacks
+- VMWare
 - Active Directory(Active Directory Domain Services and Active Directory Users and Computers)
 - DHCP
 - DNS
-- Remote Access
 - Domain Controller
 - NAT/RAS
 - PowerShell for Automating account creation and management
 
 ## Why We Need It
 
-In the realm of IT infrastructure management, the integration of Active Directory (AD) plays a pivotal role in ensuring seamless operations, robust security, and efficient user management. Let's delve into why this integration is indispensable:
+In IT infrastructure management, integrating Active Directory (AD) is crucial for smooth operations, strong security, and effective user management. Let's explore why this integration is essential:
 
 1. **Centralized User Management**: Active Directory serves as a centralized repository for user accounts, enabling administrators to manage access permissions, group memberships, and other user-related attributes from a single location. This centralized approach streamlines user management processes and enhances security by enforcing consistent access controls across the network.
 
@@ -46,14 +43,15 @@ In essence, the integration of Active Directory is indispensable for organizatio
 2. Promote to DC.
 3. Created an Admin account.
 4. Install Remote Access+Routing+Direct Access and VPN(RAS) - Configured and enabled to use 1 public IP address. User internet facing NIC as the public IP.
-5. DC is automatically made the DNS server
-6. Install and configure DHCP scope for the clients on the DC.
-7. Automate account creation.
-8. Join the client computer to the DC.
+5. DC is automatically made the DNS server.
+6. Create a DHCP Server on seperate VM.
+7. Install and configure DHCP scope for the clients on the domain.
+8. Automate account creation.
+9. Join the client computer to the DC.
 
 **Windows Client**
-1. Setup Windows 10
-2. Joined domain using private IP
+1. Setup Windows 10 & 11 machines.
+2. Joined both to the domain.
 3. Prove reachability by pinging Google, Cloudflare and the DC
 
 ## Verification
@@ -66,7 +64,8 @@ In essence, the integration of Active Directory is indispensable for organizatio
 
 
 **Joining domain**
-![domain-joined](https://github.com/rasheedjimoh/ActiveDirectory/assets/157264080/4bf8b102-3950-4584-b6ac-0d4252d14096)
+![win10DomainJoin](https://github.com/J-Soriano/ActiveDirectory/assets/78861887/f6a3d672-a09a-4601-98a7-0e792e95eafb)
+![Win11DomainJoin](https://github.com/J-Soriano/ActiveDirectory/assets/78861887/4ebe292f-742a-410b-b669-0d7f9d963f69)
 
 
 **Automating Account Creation**
